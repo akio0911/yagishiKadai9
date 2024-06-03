@@ -8,29 +8,39 @@
 import UIKit
 
 class ModalViewController: UIViewController {
-
-    @IBAction func tokyoButton(_ sender: Any) {
-        DataManager.shared.prefectureData = "東京都"
-        self.dismiss(animated: true,completion: nil)
-        
+    
+    //ボタンに応じて値を格納
+    var selectData = String()
+    
+    @IBAction func tokyoTapped(_ sender: Any) {
+        selectData = "東京都"
+        performSegue(withIdentifier: "current", sender: sender)
+//        print(selectData)
     }
     
-    @IBAction func kanagawaButton(_ sender: Any) {
-        DataManager.shared.prefectureData = "神奈川県"
-        self.dismiss(animated: true,completion: nil)
+    @IBAction func kanagawaTapped(_ sender: Any) {
+        selectData = "神奈川県"
+        performSegue(withIdentifier: "current", sender: sender)
+//        print(selectData)
     }
     
-    @IBAction func saitamaButton(_ sender: Any) {
-        DataManager.shared.prefectureData = "埼玉県"
-        self.dismiss(animated: true,completion: nil)
+    @IBAction func saitamaTapped(_ sender: Any) {
+        selectData = "埼玉県"
+        performSegue(withIdentifier: "current", sender: sender)
+//        print(selectData)
     }
     
-    @IBAction func chibaButton(_ sender: Any) {
-        DataManager.shared.prefectureData = "千葉県"
-        self.dismiss(animated: true,completion: nil)
+    @IBAction func chibaTapped(_ sender: Any) {
+        selectData = "千葉県"
+        performSegue(withIdentifier: "current", sender: sender)
+//        print(selectData)
     }
     
-    @IBAction func back() {
-        self.dismiss(animated: true,completion: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "current" {
+            let current = segue.destination as! ViewController
+            current.receiveData = selectData
+            print(selectData)
+        }
     }
 }

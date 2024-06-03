@@ -14,7 +14,6 @@
 		B60603D32BFCD4E300150C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60603D22BFCD4E300150C91 /* Assets.xcassets */; };
 		B60603D62BFCD4E300150C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60603D42BFCD4E300150C91 /* LaunchScreen.storyboard */; };
 		B60603DE2BFE59B500150C91 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60603DD2BFE59B500150C91 /* ModalViewController.swift */; };
-		B60603E22C0305FF00150C91 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60603E12C0305FF00150C91 /* ShareData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		B60603D52BFCD4E300150C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B60603D72BFCD4E300150C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B60603DD2BFE59B500150C91 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		B60603E12C0305FF00150C91 /* ShareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				B60603D42BFCD4E300150C91 /* LaunchScreen.storyboard */,
 				B60603D72BFCD4E300150C91 /* Info.plist */,
 				B60603DD2BFE59B500150C91 /* ModalViewController.swift */,
-				B60603E12C0305FF00150C91 /* ShareData.swift */,
 			);
 			path = kadai9;
 			sourceTree = "<group>";
@@ -147,7 +144,6 @@
 				B60603DE2BFE59B500150C91 /* ModalViewController.swift in Sources */,
 				B60603CE2BFCD4E100150C91 /* ViewController.swift in Sources */,
 				B60603CA2BFCD4E100150C91 /* AppDelegate.swift in Sources */,
-				B60603E22C0305FF00150C91 /* ShareData.swift in Sources */,
 				B60603CC2BFCD4E100150C91 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

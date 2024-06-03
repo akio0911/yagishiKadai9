@@ -7,8 +7,8 @@
 
 import Foundation
 
-class DataManager {
-    static let shared = DataManager()
-    private init() {}
-    var prefectureData: String = "未選択"
-}
+//class DataManager {
+//    static let shared = DataManager()
+//    private init() {}
+//    var prefectureData: String = "未選択"
+//}
