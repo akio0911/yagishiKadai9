@@ -11,9 +11,9 @@
         <!--View Controller-->
         <scene sceneID="lsy-VY-byD">
             <objects>
-                <viewController storyboardIdentifier="current" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e15-7Y-ke4" customClass="ViewController" customModule="kadai9" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="first" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e15-7Y-ke4" customClass="ViewController" customModule="kadai9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3lV-iU-P5s">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXr-Wm-Hdh">
@@ -86,6 +86,9 @@
                                                     <action selector="back" destination="1Tg-E8-fAI" eventType="touchUpInside" id="yuj-2Z-wo6"/>
                                                 </connections>
                                             </button>
+                                            <connections>
+                                                <action selector="back:" destination="1Tg-E8-fAI" id="Hs3-bL-bRk"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -97,7 +100,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="東京都"/>
                                 <connections>
                                     <action selector="tokyoTapped:" destination="1Tg-E8-fAI" eventType="touchUpInside" id="ZFn-5X-OKV"/>
-                                    <segue destination="e15-7Y-ke4" kind="show" identifier="current" id="dsf-9r-JxT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12m-Sw-dHH">
@@ -106,8 +108,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="千葉県"/>
                                 <connections>
-                                    <action selector="chibaTapped:" destination="1Tg-E8-fAI" eventType="touchUpInside" id="dvx-az-TKS"/>
-                                    <segue destination="e15-7Y-ke4" kind="show" identifier="current" id="Rt1-ys-EEM"/>
+                                    <action selector="chibaTapped:" destination="1Tg-E8-fAI" eventType="touchUpInside" id="PsX-cI-2ew"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYA-sY-RUl">
@@ -116,8 +117,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="埼玉県"/>
                                 <connections>
-                                    <action selector="saitamaTapped:" destination="1Tg-E8-fAI" eventType="touchUpInside" id="Z1j-NB-451"/>
-                                    <segue destination="e15-7Y-ke4" kind="show" identifier="current" id="COT-Lz-cIm"/>
+                                    <action selector="saitamaTapped:" destination="1Tg-E8-fAI" eventType="touchUpInside" id="apN-px-tI7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWn-iv-RK7">
@@ -126,8 +126,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="神奈川県"/>
                                 <connections>
-                                    <action selector="kanagawaTapped:" destination="1Tg-E8-fAI" eventType="touchUpInside" id="fxc-X0-PAs"/>
-                                    <segue destination="e15-7Y-ke4" kind="show" identifier="current" id="ay6-vo-127"/>
+                                    <action selector="kanagawaTapped:" destination="1Tg-E8-fAI" eventType="touchUpInside" id="SJY-8s-Avo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -140,12 +139,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LBQ-b4-rda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1170" y="5"/>
+            <point key="canvasLocation" x="621" y="5"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ay6-vo-127"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
